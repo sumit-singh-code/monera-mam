@@ -55,6 +55,7 @@ const effectPass = new EffectPass(camera, effect);
 composer.addPass(renderPass);
 composer.addPass(effectPass);
 
+
 // Animation Loop
 function animate(t) {
   composer.render();
