@@ -55,29 +55,6 @@ const effectPass = new EffectPass(camera, effect);
 composer.addPass(renderPass);
 composer.addPass(effectPass);
 
-// YouTube API
-var player;
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('myAudio', {
-    events: {
-      'onReady': onPlayerReady
-    }
-  });
-}
-
-function onPlayerReady(event) {
-  // do nothing
-}
-
-function playAudio() {
-  player.playVideo();
-}
-
-function pauseAudio() {
-  player.pauseVideo();
-}
-
 // Animation Loop
 function animate(t) {
   composer.render();
